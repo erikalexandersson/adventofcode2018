@@ -3,8 +3,6 @@ package se.erikalexandersson.adventofcode;
 import static org.junit.Assert.assertEquals;
 
 import java.net.URISyntaxException;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.junit.After;
 import org.junit.AfterClass;
