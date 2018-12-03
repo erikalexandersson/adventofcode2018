@@ -1,5 +1,6 @@
 package se.erikalexandersson.adventofcode.helpers;
 
+@SuppressWarnings("serial")
 public class DuplicateFrequencyFoundException extends Exception {
 
 	private int frequency;
