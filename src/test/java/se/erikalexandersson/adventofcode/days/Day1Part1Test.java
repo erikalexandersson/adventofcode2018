@@ -1,4 +1,4 @@
-package se.erikalexandersson.adventofcode;
+package se.erikalexandersson.adventofcode.days;
 
 import static org.junit.Assert.assertEquals;
 

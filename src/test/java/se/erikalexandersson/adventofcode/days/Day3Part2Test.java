@@ -1,4 +1,4 @@
-package se.erikalexandersson.adventofcode;
+package se.erikalexandersson.adventofcode.days;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,10 +11,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import se.erikalexandersson.adventofcode.days.Day3Part1;
-import se.erikalexandersson.adventofcode.helpers.Claim;
+import se.erikalexandersson.adventofcode.days.Day3Part2;
 
-public class Day3Part1Test {
+public class Day3Part2Test {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -35,23 +34,13 @@ public class Day3Part1Test {
 	@Test
 	public void testOverlap() throws URISyntaxException {
 		// Arrange
-		int expectedOverlap = 4;
-		Day3Part1 day3 = new Day3Part1(10, 10);
+		String expectedClaim = "3";
+		Day3Part2 day3 = new Day3Part2(10, 10);
 
 		// Act
-		int actualOverlap = day3.getOverlap(Paths.get(ClassLoader.getSystemResource("Day3TestInput.txt").toURI()));
+		String actualClaim = day3.findClaim(Paths.get(ClassLoader.getSystemResource("Day3TestInput.txt").toURI()));
 
 		// Assert
-		assertEquals(expectedOverlap, actualOverlap);
-	}
-
-	@Test
-	public void testParse() {
-		Claim expectedClaim = new Claim("1", 1, 3, 4, 4);
-		String line = "#1 @ 1,3: 4x4";
-
-		Claim actualClaim = Claim.parseLine(line);
-
 		assertEquals(expectedClaim, actualClaim);
 	}
 }

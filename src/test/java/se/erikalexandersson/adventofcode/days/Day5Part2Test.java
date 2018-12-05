@@ -1,9 +1,8 @@
-package se.erikalexandersson.adventofcode;
+package se.erikalexandersson.adventofcode.days;
 
 import static org.junit.Assert.assertEquals;
 
 import java.net.URISyntaxException;
-import java.nio.file.Paths;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,9 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import se.erikalexandersson.adventofcode.days.Day4Part2;
-
-public class Day4Part2Test {
+public class Day5Part2Test {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -32,16 +29,12 @@ public class Day4Part2Test {
 	}
 
 	@Test
-	public void testFindSleepy() throws URISyntaxException {
-		// Arrange
-		Day4Part2 day4 = new Day4Part2();
-		int expected = 4455;
+	public void testImprove() throws URISyntaxException {
+		int expected = 4;
+		String line = "dabAcCaCBAcCcaDA";
 
-		// Act
-		int actual = day4
-				.findSleepyGuard(day4.parseFile(Paths.get(ClassLoader.getSystemResource("Day4TestInput.txt").toURI())));
+		int actual = Day5Part2.improve(line);
 
-		// Assert
 		assertEquals(expected, actual);
 	}
 }

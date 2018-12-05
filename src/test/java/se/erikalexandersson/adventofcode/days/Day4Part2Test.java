@@ -1,4 +1,4 @@
-package se.erikalexandersson.adventofcode;
+package se.erikalexandersson.adventofcode.days;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,9 +11,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import se.erikalexandersson.adventofcode.days.Day3Part2;
+import se.erikalexandersson.adventofcode.days.Day4Part2;
 
-public class Day3Part2Test {
+public class Day4Part2Test {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -32,15 +32,16 @@ public class Day3Part2Test {
 	}
 
 	@Test
-	public void testOverlap() throws URISyntaxException {
+	public void testFindSleepy() throws URISyntaxException {
 		// Arrange
-		String expectedClaim = "3";
-		Day3Part2 day3 = new Day3Part2(10, 10);
+		Day4Part2 day4 = new Day4Part2();
+		int expected = 4455;
 
 		// Act
-		String actualClaim = day3.findClaim(Paths.get(ClassLoader.getSystemResource("Day3TestInput.txt").toURI()));
+		int actual = day4
+				.findSleepyGuard(day4.parseFile(Paths.get(ClassLoader.getSystemResource("Day4TestInput.txt").toURI())));
 
 		// Assert
-		assertEquals(expectedClaim, actualClaim);
+		assertEquals(expected, actual);
 	}
 }
