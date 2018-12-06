@@ -44,7 +44,7 @@ public class Day2Part2Test {
 	}
 
 	@Test
-	public void test1() throws URISyntaxException {
+	public void test1() {
 		// Arrange
 		int expectedDiff = 2;
 
@@ -56,7 +56,7 @@ public class Day2Part2Test {
 	}
 
 	@Test
-	public void test2() throws URISyntaxException {
+	public void test2() {
 		// Arrange
 		int expectedDiff = 1;
 
@@ -68,7 +68,7 @@ public class Day2Part2Test {
 	}
 
 	@Test
-	public void test3() throws URISyntaxException {
+	public void test3() {
 		// Arrange
 		String expected = "fgij";
 

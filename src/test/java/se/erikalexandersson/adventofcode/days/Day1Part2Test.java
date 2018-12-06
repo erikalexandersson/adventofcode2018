@@ -2,15 +2,12 @@ package se.erikalexandersson.adventofcode.days;
 
 import static org.junit.Assert.assertEquals;
 
-import java.net.URISyntaxException;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import se.erikalexandersson.adventofcode.days.Day1Part2;
 import se.erikalexandersson.adventofcode.helpers.DuplicateFrequencyFoundException;
 
 public class Day1Part2Test {
@@ -32,7 +29,7 @@ public class Day1Part2Test {
 	}
 
 	@Test
-	public void test1() throws URISyntaxException {
+	public void test1() {
 		// Arrange
 		Day1Part2 day1 = new Day1Part2(0);
 
@@ -49,7 +46,7 @@ public class Day1Part2Test {
 	}
 
 	@Test
-	public void test2() throws URISyntaxException {
+	public void test2() {
 		// Arrange
 		Day1Part2 day1 = new Day1Part2(0);
 
@@ -69,7 +66,7 @@ public class Day1Part2Test {
 	}
 
 	@Test
-	public void test3() throws URISyntaxException {
+	public void test3() {
 		// Arrange
 		Day1Part2 day1 = new Day1Part2(0);
 
@@ -89,7 +86,7 @@ public class Day1Part2Test {
 	}
 
 	@Test
-	public void test4() throws URISyntaxException {
+	public void test4() {
 		// Arrange
 		Day1Part2 day1 = new Day1Part2(0);
 

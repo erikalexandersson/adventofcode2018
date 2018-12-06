@@ -2,15 +2,11 @@ package se.erikalexandersson.adventofcode.days;
 
 import static org.junit.Assert.assertEquals;
 
-import java.net.URISyntaxException;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import se.erikalexandersson.adventofcode.days.Day1Part1;
 
 public class Day1Part1Test {
 
@@ -31,58 +27,58 @@ public class Day1Part1Test {
 	}
 
 	@Test
-	public void test1() throws URISyntaxException {
+	public void test1() {
 		// Arrange
 		Day1Part1 day1 = new Day1Part1(0);
-		
+
 		// Act
 		day1.add(1);
 		day1.add(-2);
 		day1.add(3);
 		day1.add(1);
-		
+
 		// Assert
 		assertEquals(3, day1.getFrequency());
 	}
-	
+
 	@Test
-	public void test2() throws URISyntaxException {
+	public void test2() {
 		// Arrange
 		Day1Part1 day1 = new Day1Part1(0);
-		
+
 		// Act
 		day1.add(1);
 		day1.add(1);
 		day1.add(1);
-		
+
 		// Assert
 		assertEquals(3, day1.getFrequency());
 	}
-	
+
 	@Test
-	public void test3() throws URISyntaxException {
+	public void test3() {
 		// Arrange
 		Day1Part1 day1 = new Day1Part1(0);
-		
+
 		// Act
 		day1.add(1);
 		day1.add(1);
 		day1.add(-2);
-		
+
 		// Assert
 		assertEquals(0, day1.getFrequency());
 	}
-	
+
 	@Test
-	public void test4() throws URISyntaxException {
+	public void test4() {
 		// Arrange
 		Day1Part1 day1 = new Day1Part1(0);
-		
+
 		// Act
 		day1.add(-1);
 		day1.add(-2);
 		day1.add(-3);
-		
+
 		// Assert
 		assertEquals(-6, day1.getFrequency());
 	}

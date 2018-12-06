@@ -1,16 +1,12 @@
 package se.erikalexandersson.adventofcode.days;
 
-import static org.junit.Assert.*;
-
-import java.net.URISyntaxException;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import se.erikalexandersson.adventofcode.days.Day5Part1;
 
 public class Day5Part1Test {
 
@@ -31,7 +27,7 @@ public class Day5Part1Test {
 	}
 
 	@Test
-	public void testReact() throws URISyntaxException {
+	public void testReact() {
 		String expected = "";
 		String line = "aA";
 
@@ -41,7 +37,7 @@ public class Day5Part1Test {
 	}
 
 	@Test
-	public void testReact2() throws URISyntaxException {
+	public void testReact2() {
 		String expected = "dabCBAcaDA";
 		String line = "dabAcCaCBAcCcaDA";
 

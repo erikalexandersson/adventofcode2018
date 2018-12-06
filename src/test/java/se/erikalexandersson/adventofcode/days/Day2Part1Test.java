@@ -37,14 +37,15 @@ public class Day2Part1Test {
 		int expectedChecksum = 12;
 
 		// Act
-		int actualChecksum = Day2Part1.checksum(Paths.get(ClassLoader.getSystemResource("Day2Part1TestInput.txt").toURI()));
+		int actualChecksum = Day2Part1
+				.checksum(Paths.get(ClassLoader.getSystemResource("Day2Part1TestInput.txt").toURI()));
 
 		// Assert
 		assertEquals(expectedChecksum, actualChecksum);
 	}
 
 	@Test
-	public void test1() throws URISyntaxException {
+	public void test1() {
 		// Arrange
 		int expectedNumTwos = 0;
 		int expectedNumThrees = 0;
@@ -60,7 +61,7 @@ public class Day2Part1Test {
 	}
 
 	@Test
-	public void test2() throws URISyntaxException {
+	public void test2() {
 		// Arrange
 		int expectedNumTwos = 1;
 		int expectedNumThrees = 1;
@@ -76,7 +77,7 @@ public class Day2Part1Test {
 	}
 
 	@Test
-	public void test3() throws URISyntaxException {
+	public void test3() {
 		// Arrange
 		int expectedNumTwos = 1;
 		int expectedNumThrees = 0;
@@ -92,7 +93,7 @@ public class Day2Part1Test {
 	}
 
 	@Test
-	public void test4() throws URISyntaxException {
+	public void test4() {
 		// Arrange
 		int expectedNumTwos = 0;
 		int expectedNumThrees = 1;
@@ -108,7 +109,7 @@ public class Day2Part1Test {
 	}
 
 	@Test
-	public void test5() throws URISyntaxException {
+	public void test5() {
 		// Arrange
 		int expectedNumTwos = 1;
 		int expectedNumThrees = 0;
@@ -124,7 +125,7 @@ public class Day2Part1Test {
 	}
 
 	@Test
-	public void test6() throws URISyntaxException {
+	public void test6() {
 		// Arrange
 		int expectedNumTwos = 1;
 		int expectedNumThrees = 0;
@@ -140,7 +141,7 @@ public class Day2Part1Test {
 	}
 
 	@Test
-	public void test7() throws URISyntaxException {
+	public void test7() {
 		// Arrange
 		int expectedNumTwos = 0;
 		int expectedNumThrees = 1;
